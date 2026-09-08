@@ -1,0 +1,39 @@
+site_name: qubosel
+site_description: Combinatorial (QUBO-based) feature selection with quantum-inspired solvers
+repo_url: https://github.com/dpiccolomd/qubosel
+theme:
+  name: material
+  features: [navigation.sections, content.code.copy]
+  palette:
+    - scheme: default
+      toggle: { icon: material/brightness-7, name: Dark mode }
+    - scheme: slate
+      toggle: { icon: material/brightness-4, name: Light mode }
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex: { generic: true }
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - toc: { permalink: true }
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options: { docstring_style: numpy, show_source: false, members_order: source }
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quickstart: quickstart.md
+  - Theory: theory.md
+  - Solvers: solvers.md
+  - Consensus: consensus.md
+  - Validation and leakage: validation.md
+  - Ground-truth simulation: simulation.md
+  - API reference: api.md
+  - Label-permutation control on public data: public-small-n.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md

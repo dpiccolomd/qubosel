@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use qubosel, please cite it as below."
+title: "qubosel: combinatorial (QUBO-based) feature selection with quantum-inspired solvers"
+type: software
+version: 0.1.0
+date-released: 2026-09-08
+license: MIT
+repository-code: https://github.com/dpiccolomd/qubosel
+authors:
+  - family-names: Piccolo
+    given-names: Daniele
+    email: ing.daniele@gmail.com
+keywords:
+  - feature selection
+  - QUBO
+  - simulated annealing
+  - simulated bifurcation
+  - QAOA
+  - mutual information
